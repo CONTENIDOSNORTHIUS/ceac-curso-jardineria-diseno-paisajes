@@ -213,52 +213,179 @@
 
     <!-- ==================== Tres institutos ==================== -->
     <section class="py-16 lg:py-20">
-      <div class="max-w-6xl mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-        <div class="reveal">
-          <h2 class="font-display italic text-3xl md:text-4xl text-ceac-blue leading-tight mb-5">
+      <div class="max-w-6xl mx-auto px-4 lg:px-8">
+        <!-- Encabezado + bullets -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 mb-10 reveal">
+          <h2 class="font-display italic text-3xl md:text-4xl text-ceac-blue leading-tight">
             Además, contamos con tres institutos de formación profesional
           </h2>
-          <ul class="space-y-3 text-gray-700 text-sm md:text-base">
-            <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-ceac-limeDark mt-2 flex-shrink-0"></span> Más de 30 ciclos formativos de Grado Medio y Superior.</li>
-            <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-ceac-limeDark mt-2 flex-shrink-0"></span> Centros homologados por las administraciones autonómicas.</li>
-            <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-ceac-limeDark mt-2 flex-shrink-0"></span> Equipos docentes en activo conectados con el tejido empresarial.</li>
+          <ul class="space-y-4 text-ceac-blue text-sm md:text-base">
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0 text-ceac-limeDark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              <span>Más de 17.000m² de innovadoras instalaciones</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0 text-ceac-limeDark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              <span>Centros dotados de la última tecnología</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0 text-ceac-limeDark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              <span>Aulas, talleres y laboratorios similares a los de un entorno laboral</span>
+            </li>
           </ul>
         </div>
 
-        <div class="reveal">
-          <!-- Foto real de los 3 institutos CEAC -->
-          <img src="assets/img/seccion-2.jpg" alt="Institutos CEAC en Madrid, Barcelona y Valencia" class="w-full rounded-2xl shadow-lg" />
-          <div class="grid grid-cols-3 gap-2 mt-3 text-center">
-            <div>
-              <p class="font-semibold text-ceac-blue text-sm">Madrid</p>
-              <p class="text-[11px] text-gray-500">Instituto CEAC</p>
+        <!-- 3 tarjetas azules con foto + dirección -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 reveal">
+          <article class="bg-ceac-blue rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <!-- TODO: Sustituir por foto real del Instituto CEAC Madrid -->
+            <img src="https://placehold.co/600x400/0017EC/FFFFFF?text=Instituto+Madrid" alt="Edificio Instituto CEAC Madrid" class="w-full aspect-[5/3] object-cover" />
+            <div class="px-5 pt-4 pb-5">
+              <p class="font-display italic text-2xl md:text-3xl text-white leading-tight">Madrid</p>
+              <p class="text-white/85 text-xs md:text-sm mt-2 leading-snug">Pl. Cisneros, nº 1, 28037</p>
+              <p class="text-white/60 text-[10px] md:text-xs mt-3">Cód. centro: 28066709</p>
             </div>
-            <div>
-              <p class="font-semibold text-ceac-blue text-sm">Barcelona</p>
-              <p class="text-[11px] text-gray-500">Instituto CEAC</p>
+          </article>
+
+          <article class="bg-ceac-blue rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <!-- TODO: Sustituir por foto real del Instituto CEAC Barcelona -->
+            <img src="https://placehold.co/600x400/0017EC/FFFFFF?text=Instituto+Barcelona" alt="Edificio Instituto CEAC Barcelona" class="w-full aspect-[5/3] object-cover" />
+            <div class="px-5 pt-4 pb-5">
+              <p class="font-display italic text-2xl md:text-3xl text-white leading-tight">Barcelona</p>
+              <p class="text-white/85 text-xs md:text-sm mt-2 leading-snug">C. de Salvador Espriu, 33, 08908 L'Hospitalet de Llobregat</p>
+              <p class="text-white/60 text-[10px] md:text-xs mt-3">Cód. centro: 08075262</p>
             </div>
-            <div>
-              <p class="font-semibold text-ceac-blue text-sm">Valencia</p>
-              <p class="text-[11px] text-gray-500">Instituto CEAC</p>
+          </article>
+
+          <article class="bg-ceac-blue rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+            <!-- TODO: Sustituir por foto real del Instituto CEAC Valencia -->
+            <img src="https://placehold.co/600x400/0017EC/FFFFFF?text=Instituto+Valencia" alt="Edificio Instituto CEAC Valencia" class="w-full aspect-[5/3] object-cover" />
+            <div class="px-5 pt-4 pb-5">
+              <p class="font-display italic text-2xl md:text-3xl text-white leading-tight">Valencia</p>
+              <p class="text-white/85 text-xs md:text-sm mt-2 leading-snug">Avenida de la Ilustración, 4, 46100 Burjasot</p>
+              <p class="text-white/60 text-[10px] md:text-xs mt-3">Cód. centro: 46033550</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ==================== Sellos de calidad ==================== -->
-    <section class="py-14 bg-ceac-softBg">
-      <div class="max-w-6xl mx-auto px-4 lg:px-8 reveal">
-        <h2 class="font-display italic text-2xl md:text-3xl text-ceac-blue">Quienes confían en nuestra formación</h2>
-        <p class="text-sm text-gray-500 mb-10">Sellos de calidad y reconocimientos</p>
+    <!-- ==================== Nuestros alumnos opinan ==================== -->
+    <section class="py-16 lg:py-20">
+      <div class="max-w-6xl mx-auto px-4 lg:px-8">
+        <h2 class="font-display italic text-3xl md:text-4xl text-ceac-blue mb-8 reveal">
+          Nuestros alumnos opinan
+        </h2>
 
-        <div class="grid grid-cols-3 md:grid-cols-6 gap-6 lg:gap-10 items-center">
-          <img src="assets/sellos/aenor-iso14001.svg" alt="Sello AENOR ISO 14001" class="h-14 w-auto mx-auto" />
-          <img src="assets/sellos/aenor-iqnet.svg" alt="AENOR IQNet" class="h-14 w-auto mx-auto" />
-          <img src="assets/sellos/bcorp.svg" alt="B Corp Empresa Certificada" class="h-14 w-auto mx-auto" />
-          <img src="assets/sellos/cepyme.svg" alt="CEPYME" class="h-10 w-auto mx-auto" />
-          <img src="assets/sellos/cre100do.svg" alt="CRE100DO" class="h-10 w-auto mx-auto" />
-          <img src="assets/sellos/save-the-children.svg" alt="Save the Children" class="h-10 w-auto mx-auto" />
+        <!-- Widget Trustpilot -->
+        <div class="inline-flex items-center gap-5 bg-white rounded-xl border border-gray-200 px-6 py-4 mb-8 reveal">
+          <div>
+            <p class="font-semibold text-sm text-gray-800">Excellent</p>
+            <div class="flex items-center gap-1 mt-1" aria-label="4,8 sobre 5">
+              <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+              <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+              <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+              <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+              <span class="w-5 h-5 bg-[#73CF11] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+            </div>
+            <p class="text-[11px] text-gray-500 mt-2">Based on <strong class="text-gray-700">35.601</strong> reviews</p>
+          </div>
+          <div class="border-l border-gray-200 pl-5">
+            <div class="flex items-center gap-1.5">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#00B67A"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+              <span class="font-bold text-sm text-gray-800">Trustpilot</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 testimonios -->
+        <div class="grid md:grid-cols-3 gap-4 reveal">
+          <article class="bg-white border border-gray-200 rounded-xl p-5">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex gap-0.5">
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+              </div>
+              <span class="text-[11px] text-gray-400">2 days ago</span>
+            </div>
+            <p class="font-semibold text-sm text-gray-800 mb-1">Superior Experience</p>
+            <p class="text-xs text-gray-600 leading-relaxed">Service of this company was just incredible, I will definitely use their products again.</p>
+            <p class="text-[11px] text-gray-500 mt-3">Carol Newman</p>
+          </article>
+
+          <article class="bg-white border border-gray-200 rounded-xl p-5">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex gap-0.5">
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+              </div>
+              <span class="text-[11px] text-gray-400">3 days ago</span>
+            </div>
+            <p class="font-semibold text-sm text-gray-800 mb-1">Highly Recommended</p>
+            <p class="text-xs text-gray-600 leading-relaxed">I can recommend this company without any doubt. Good job, guys!</p>
+            <p class="text-[11px] text-gray-500 mt-3">John Doe</p>
+          </article>
+
+          <article class="bg-white border border-gray-200 rounded-xl p-5">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex gap-0.5">
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#00B67A] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                <span class="w-4 h-4 bg-[#DCDCE6] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+              </div>
+              <span class="text-[11px] text-gray-400">5 days ago</span>
+            </div>
+            <p class="font-semibold text-sm text-gray-800 mb-1">As good as expected</p>
+            <p class="text-xs text-gray-600 leading-relaxed">I liked a lot of other services, but this one was the best and completely fulfilled my expectations.</p>
+            <p class="text-[11px] text-gray-500 mt-3">Peter Jones</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Quienes confían — Sellos de calidad ==================== -->
+    <section class="py-14">
+      <div class="max-w-6xl mx-auto px-4 lg:px-8 reveal">
+        <h2 class="font-display italic text-3xl md:text-4xl text-ceac-blue">Quienes confían en nuestra formación</h2>
+        <p class="text-sm text-ceac-limeDark font-semibold mb-10">Sellos de calidad</p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 lg:gap-6">
+          <!-- Sello G (verde corporativo ARDAN) -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-5 aspect-square flex items-center justify-center">
+            <div class="w-full aspect-square rounded-full bg-[#5C8233] flex items-center justify-center">
+              <img src="assets/sellos/ardan-g.svg" alt="Sello ARDAN G" class="w-3/4 h-3/4" />
+            </div>
+          </div>
+          <!-- Sello GR (rosa) -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-5 aspect-square flex items-center justify-center">
+            <div class="w-full aspect-square rounded-full bg-[#C2185B] flex items-center justify-center">
+              <img src="assets/sellos/ardan-gr.svg" alt="Sello ARDAN GR" class="w-3/4 h-3/4" />
+            </div>
+          </div>
+          <!-- Sello AR (naranja) -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-5 aspect-square flex items-center justify-center">
+            <div class="w-full aspect-square rounded-full bg-[#EF6C00] flex items-center justify-center">
+              <img src="assets/sellos/ardan-ar.svg" alt="Sello ARDAN AR" class="w-3/4 h-3/4" />
+            </div>
+          </div>
+          <!-- Sello AP (amarillo) -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-5 aspect-square flex items-center justify-center">
+            <div class="w-full aspect-square rounded-full bg-[#F9A825] flex items-center justify-center">
+              <img src="assets/sellos/ardan-ap.svg" alt="Sello ARDAN AP" class="w-3/4 h-3/4" />
+            </div>
+          </div>
+          <!-- B Corp -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-5 aspect-square flex items-center justify-center">
+            <img src="assets/sellos/bcorp.svg" alt="B Corp" class="max-w-full max-h-full" />
+          </div>
         </div>
       </div>
     </section>
