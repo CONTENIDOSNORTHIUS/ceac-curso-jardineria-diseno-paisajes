@@ -282,28 +282,7 @@
           Nuestros alumnos opinan
         </h2>
 
-        <!-- Widget Trustpilot -->
-        <div class="inline-flex items-center gap-5 bg-white rounded-xl border border-gray-200 px-6 py-4 mb-8 reveal">
-          <div>
-            <p class="font-semibold text-sm text-gray-800">Excellent</p>
-            <div class="flex items-center gap-1 mt-1" aria-label="4,8 sobre 5">
-              <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
-              <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
-              <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
-              <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
-              <span class="w-5 h-5 bg-[#73CF11] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
-            </div>
-            <p class="text-[11px] text-gray-500 mt-2">Based on <strong class="text-gray-700">35.601</strong> reviews</p>
-          </div>
-          <div class="border-l border-gray-200 pl-5">
-            <div class="flex items-center gap-1.5">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#00B67A"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
-              <span class="font-bold text-sm text-gray-800">Trustpilot</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carrusel horizontal de testimonios -->
+        <!-- Carrusel horizontal de testimonios (1ª tarjeta: widget Trustpilot) -->
         <div class="relative reveal">
           <!-- Botón izquierda -->
           <button type="button" id="reviewsPrev" aria-label="Anterior" class="hidden md:flex absolute -left-3 lg:-left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md hover:bg-gray-50 items-center justify-center transition">
@@ -315,6 +294,28 @@
           </button>
 
           <div id="reviewsTrack" class="reviews-track flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2">
+
+            <!-- Tarjeta 1: Widget Trustpilot resumen -->
+            <article class="snap-start shrink-0 w-[280px] md:w-[300px] bg-white border border-gray-200 rounded-xl p-5 flex flex-col justify-center">
+              <div class="flex items-center gap-4">
+                <div>
+                  <p class="font-semibold text-sm text-gray-800">Excellent</p>
+                  <div class="flex items-center gap-1 mt-1.5" aria-label="4,8 sobre 5">
+                    <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                    <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                    <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                    <span class="w-5 h-5 bg-[#00B67A] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                    <span class="w-5 h-5 bg-[#73CF11] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                  </div>
+                </div>
+                <div class="border-l border-gray-200 pl-4 flex items-center gap-1.5">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#00B67A"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+                  <span class="font-bold text-sm text-gray-800">Trustpilot</span>
+                </div>
+              </div>
+              <p class="text-[11px] text-gray-500 mt-3">Based on <strong class="text-gray-700">35.601</strong> reviews</p>
+            </article>
+
             <article class="snap-start shrink-0 w-[280px] md:w-[300px] bg-white border border-gray-200 rounded-xl p-5">
               <div class="flex items-center justify-between mb-3">
                 <div class="flex gap-0.5">
