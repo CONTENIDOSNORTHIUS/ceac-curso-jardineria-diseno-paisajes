@@ -948,66 +948,57 @@
       </div>
     </section>
 
-    <!-- ==================== METODOLOGÍA CEAC (zigzag) ==================== -->
-    <section id="metodologia" class="bg-ceac-skyBg py-16 lg:py-24">
+    <!-- ==================== METODOLOGÍA CEAC ==================== -->
+    <section id="metodologia" class="bg-ceac-skyBg py-16 lg:py-20">
       <div class="max-w-6xl mx-auto px-4 lg:px-8">
-        <div class="text-center mb-14 reveal">
-          <h2 class="font-display italic text-3xl md:text-4xl text-ceac-blue">Metodología CEAC</h2>
-          <p class="text-sm text-gray-600 mt-2">¿Cuál es nuestra clave de éxito?</p>
+        <!-- Encabezado -->
+        <div class="reveal max-w-xl mb-8">
+          <h2 class="font-display italic text-3xl md:text-4xl lg:text-5xl text-ceac-blue mb-3 leading-tight">
+            Metodología <span class="italic">CEAC</span>
+          </h2>
+          <p class="font-semibold text-ceac-blue text-sm md:text-base mb-3">El camino que recorrerás como alumno</p>
+          <p class="text-xs md:text-sm text-black leading-relaxed">
+            Te acompañamos a lo largo de todo el proceso, desde el primer día hasta tu salida al
+            mercado laboral.
+          </p>
         </div>
 
-        <!-- Zigzag desktop -->
-        <div class="relative hidden md:block reveal">
-          <svg class="absolute inset-x-0 top-12 w-full h-32" viewBox="0 0 1000 120" fill="none" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M 130 100 L 400 20 L 600 100 L 870 20" stroke="#0017EC" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
-          </svg>
-
-          <div class="grid grid-cols-3 gap-8 relative z-10">
-            <div class="mt-24 text-center">
-              <div class="w-16 h-16 mx-auto rounded-full bg-ceac-lime flex items-center justify-center mb-4">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0017EC" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-              </div>
-              <p class="font-display italic text-lg text-ceac-blue">(01)</p>
-              <p class="font-semibold text-ceac-blue text-sm mt-1">Formación teórica</p>
-              <p class="text-xs text-gray-600 mt-2 max-w-[200px] mx-auto">Contenidos actualizados, diseñados por expertos del sector.</p>
-            </div>
-
-            <div class="text-center">
-              <div class="w-16 h-16 mx-auto rounded-full bg-ceac-lime flex items-center justify-center mb-4">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0017EC" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              </div>
-              <p class="font-display italic text-lg text-ceac-blue">(02)</p>
-              <p class="font-semibold text-ceac-blue text-sm mt-1">Recursos y campus</p>
-              <p class="text-xs text-gray-600 mt-2 max-w-[200px] mx-auto">Campus virtual 24/7, tutorías y materiales descargables.</p>
-            </div>
-
-            <div class="mt-24 text-center">
-              <div class="w-16 h-16 mx-auto rounded-full bg-ceac-lime flex items-center justify-center mb-4">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0017EC" stroke-width="2"><path d="M20 7h-3V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
-              </div>
-              <p class="font-display italic text-lg text-ceac-blue">(03)</p>
-              <p class="font-semibold text-ceac-blue text-sm mt-1">Prácticas garantizadas</p>
-              <p class="text-xs text-gray-600 mt-2 max-w-[200px] mx-auto">Prácticas profesionales aseguradas en empresas reales.</p>
-            </div>
+        <!-- Ilustración del camino -->
+        <div class="reveal">
+          <img src="assets/img/metodologia-ceac.png"
+               onerror="this.style.display='none'; document.getElementById('metodologia-fallback').style.display='block';"
+               alt="Ilustración del camino del alumno: formación teórica, recursos y campus, prácticas garantizadas"
+               class="w-full h-auto" />
+          <!-- Fallback: zigzag SVG simplificado si la imagen aún no está -->
+          <div id="metodologia-fallback" style="display:none;" class="relative">
+            <svg class="w-full h-32" viewBox="0 0 1000 120" fill="none" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M 100 100 L 400 20 L 600 100 L 900 20" stroke="#0017EC" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+            </svg>
           </div>
         </div>
 
-        <!-- Stack mobile -->
-        <div class="md:hidden space-y-4 reveal">
-          <div class="bg-white rounded-2xl p-5 text-center">
-            <div class="w-14 h-14 mx-auto rounded-full bg-ceac-lime flex items-center justify-center mb-3 font-display italic text-ceac-blue">01</div>
-            <p class="font-semibold text-ceac-blue">Formación teórica</p>
-            <p class="text-xs text-gray-600 mt-1">Contenidos actualizados, diseñados por expertos del sector.</p>
+        <!-- 3 etapas debajo -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-8 reveal">
+          <div class="border-l-2 border-ceac-blue pl-4 md:pl-5">
+            <p class="font-display text-2xl md:text-3xl text-ceac-blue mb-2">(01)</p>
+            <p class="font-semibold text-ceac-blue text-sm md:text-base mb-2">Formación teórica</p>
+            <p class="text-xs md:text-sm text-ceac-blue leading-relaxed">
+              A tu propio ritmo, con asesoramiento continuo del equipo docente.
+            </p>
           </div>
-          <div class="bg-white rounded-2xl p-5 text-center">
-            <div class="w-14 h-14 mx-auto rounded-full bg-ceac-lime flex items-center justify-center mb-3 font-display italic text-ceac-blue">02</div>
-            <p class="font-semibold text-ceac-blue">Recursos y campus</p>
-            <p class="text-xs text-gray-600 mt-1">Campus virtual 24/7, tutorías y materiales descargables.</p>
+          <div class="border-l-2 border-ceac-blue pl-4 md:pl-5">
+            <p class="font-display text-2xl md:text-3xl text-ceac-blue mb-2">(02)</p>
+            <p class="font-semibold text-ceac-blue text-sm md:text-base mb-2">Recursos y campus</p>
+            <p class="text-xs md:text-sm text-ceac-blue leading-relaxed">
+              Material 100% digital, experiencias gamificadas y comunidad de alumnos.
+            </p>
           </div>
-          <div class="bg-white rounded-2xl p-5 text-center">
-            <div class="w-14 h-14 mx-auto rounded-full bg-ceac-lime flex items-center justify-center mb-3 font-display italic text-ceac-blue">03</div>
-            <p class="font-semibold text-ceac-blue">Prácticas garantizadas</p>
-            <p class="text-xs text-gray-600 mt-1">Prácticas profesionales aseguradas en empresas reales.</p>
+          <div class="border-l-2 border-ceac-blue pl-4 md:pl-5">
+            <p class="font-display text-2xl md:text-3xl text-ceac-blue mb-2">(03)</p>
+            <p class="font-semibold text-ceac-blue text-sm md:text-base mb-2">Prácticas garantizadas</p>
+            <p class="text-xs md:text-sm text-ceac-blue leading-relaxed">
+              Pondrás en práctica lo aprendido para llegar al mundo laboral con experiencia.
+            </p>
           </div>
         </div>
       </div>
